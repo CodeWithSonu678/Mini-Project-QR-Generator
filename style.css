@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#212121;
+}
+.box{
+    border:2px solid darkgray;
+     padding:30px;
+    min-width: 300px;   
+    max-width: 400px; 
+    background:#155e75;
+    border-radius:10px;
+    
+}
+.qr-header .title{
+    color:#fff;
+    text-align:center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.qr-header #qr-text{
+    width:100%;
+    font-size: 17px;
+    margin-block: 12px;
+    outline: none;
+    
+    background: #fff;
+    
+    }
+.qr-header input, select {
+    border:2px solid #7fb7c9;
+    padding:8px;
+    border-radius: 4px;
+    
+    outline:none;
+}
+.qr-header .size lable{
+    color:#fff;
+    font-size: 20px;
+}
+.qr-header div{
+    display:flex;
+    justify-content: space-between;
+}
+.qr-footer {
+    
+    margin-top:15px;
+    display:flex;
+    justify-content: space-around;
+}
+.qr-footer a{
+    text-decoration: none;
+    background:#fff;
+    color:#155e75;
+    padding:10px;
+    font-size: 16px;
+    border-radius:5px;
+
+}
+.qr-body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    overflow: hidden;   /* ➕ QR बाहर ना निकले */
+    max-width: 100%;    /* ➕ box के बाहर ना जाए */
+}
+
+/* ➕ img और canvas भी responsive कर दो */
+.qr-body img, .qr-body canvas {
+    max-width: 100%;
+    height: auto;
+}
